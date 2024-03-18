@@ -64,9 +64,9 @@ class _MoviesScreenState extends State<MoviesScreen> {
                     child: Stack(
                       children: [
                         Container(
-                          decoration: BoxDecoration(
+                          decoration:const BoxDecoration(
                               borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(16),
+                                  topRight: Radius.circular(30),
                                   topLeft: Radius.circular(10),
                                   bottomRight: Radius.circular(10),
                                   bottomLeft: Radius.circular(10)),
@@ -75,7 +75,7 @@ class _MoviesScreenState extends State<MoviesScreen> {
                                   fit: BoxFit.cover,
                                   image: AssetImage('assets/flowers.jpeg'))),
                         ),
-                        Padding(
+                       const Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 6),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.end,
